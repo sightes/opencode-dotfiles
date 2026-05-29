@@ -1,0 +1,44 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "lmstudio": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "LM Studio (local)",
+      "options": {
+        "baseURL": "http://127.0.0.1:1234/v1"
+      },
+      "models": {
+        "gemma-4-e4b-it": {
+          "name": "Gemma 4 E4B IT (local)"
+        }
+      }
+    }
+  },
+  "agent": {
+    "devops-engineer": {
+      "description": "Use this agent when building or optimizing infrastructure automation, CI/CD pipelines, containerization strategies, and deployment workflows.",
+      "mode": "subagent",
+      "model": "anthropic/claude-sonnet-4-6"
+    },
+    "nurse": {
+      "description": "Use when working on nursing tasks, patient assessment, triage (ESI), medication administration (5 Rights), clinical protocols, patient safety, and care coordination in hospital or clinical settings.",
+      "mode": "subagent",
+      "model": "opencode-go/minimax-m2.7"
+    },
+    "pharmacist": {
+      "description": "Use when working on pharmacy tasks, drug information, order verification, drug interactions, dosing calculations, therapeutic drug monitoring, medication safety, and regulatory compliance.",
+      "mode": "subagent",
+      "model": "opencode-go/minimax-m2.7"
+    },
+    "receptionist": {
+      "description": "Use when working on patient registration, appointment scheduling, triage coordination, visitor management, insurance verification, emergency codes, and hospital administrative workflows.",
+      "mode": "subagent",
+      "model": "opencode-go/minimax-m2.7"
+    },
+    "lab-technician": {
+      "description": "Use when working on laboratory tasks, specimen collection and processing, hematology, chemistry, microbiology, blood bank, urinalysis, quality control, critical values, and result interpretation.",
+      "mode": "subagent",
+      "model": "opencode-go/minimax-m2.7"
+    }
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "version": 3,
+  "skills": {
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "skillFolderHash": "3013fdeb8a11b10b1eb795ec3ae8bfca38f7c26d",
+      "installedAt": "2026-05-14T03:05:30.568Z",
+      "updatedAt": "2026-05-14T03:05:30.568Z"
+    },
+    "clean-code": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/sickn33/antigravity-awesome-skills.git",
+      "skillPath": "skills/clean-code/SKILL.md",
+      "skillFolderHash": "f7e9ebffd5608df6b3ab00e0b0375d693215a409",
+      "installedAt": "2026-05-15T04:06:03.735Z",
+      "updatedAt": "2026-05-15T04:06:03.735Z"
+    },
+    "documentation-writer": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/github/awesome-copilot.git",
+      "skillPath": "skills/documentation-writer/SKILL.md",
+      "skillFolderHash": "016d8040a3f91c8360b1003e74fbf29f34c283f5",
+      "installedAt": "2026-05-15T04:06:54.395Z",
+      "updatedAt": "2026-05-15T04:06:54.395Z"
+    },
+    "github-actions-docs": {
+      "source": "xixu-me/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/xixu-me/skills.git",
+      "skillPath": "skills/github-actions-docs/SKILL.md",
+      "skillFolderHash": "518c85da555f91c346813aa5bb3cc62f9db8bfb3",
+      "installedAt": "2026-05-15T04:07:22.549Z",
+      "updatedAt": "2026-05-15T04:07:22.549Z"
+    },
+    "nextjs-react-typescript": {
+      "source": "mindrally/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mindrally/skills.git",
+      "skillPath": "nextjs-react-typescript/SKILL.md",
+      "skillFolderHash": "4b2eed815e8e783de4669fe6c3945eab8316d309",
+      "installedAt": "2026-05-15T04:07:29.709Z",
+      "updatedAt": "2026-05-15T04:07:29.709Z"
+    },
+    "playwright-cli": {
+      "source": "microsoft/playwright-cli",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/microsoft/playwright-cli.git",
+      "skillPath": "skills/playwright-cli/SKILL.md",
+      "skillFolderHash": "7f1be9aef5c4435ed99dc74a383ca814d05c82c5",
+      "installedAt": "2026-05-15T04:07:35.693Z",
+      "updatedAt": "2026-05-15T04:07:35.693Z"
+    },
+    "skill-vetter": {
+      "source": "useai-pro/openclaw-skills-security",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/useai-pro/openclaw-skills-security.git",
+      "skillPath": "skills/skill-vetter/SKILL.md",
+      "skillFolderHash": "a2fa41039f86451ff25ac6506979b03b12588aef",
+      "installedAt": "2026-05-15T04:07:43.355Z",
+      "updatedAt": "2026-05-15T04:07:43.355Z"
+    },
+    "test-driven-development": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/obra/superpowers.git",
+      "skillPath": "skills/test-driven-development/SKILL.md",
+      "skillFolderHash": "98904a7d8e0e04b9bd46220b9b17298f45fe0b72",
+      "installedAt": "2026-05-15T04:07:49.854Z",
+      "updatedAt": "2026-05-15T04:07:49.854Z"
+    },
+    "ui-ux-pro-max": {
+      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
+      "skillPath": ".claude/skills/ui-ux-pro-max/SKILL.md",
+      "skillFolderHash": "75e1acaafe8b08e59d4b86fc253ac7873aff6bba",
+      "pluginName": "ui-ux-pro-max",
+      "installedAt": "2026-05-15T04:07:57.472Z",
+      "updatedAt": "2026-05-15T04:07:57.472Z"
+    },
+    "web-design-guidelines": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
+      "skillPath": "skills/web-design-guidelines/SKILL.md",
+      "skillFolderHash": "3116f3e62dbd02b44a598b1aa690d2a8938e8f89",
+      "installedAt": "2026-05-15T04:08:02.278Z",
+      "updatedAt": "2026-05-15T04:08:02.278Z"
+    },
+    "developing-genkit-python": {
+      "source": "firebase/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/firebase/agent-skills.git",
+      "skillPath": "skills/developing-genkit-python/SKILL.md",
+      "skillFolderHash": "e1043041631a680b0f3f12b1c5718d71706e2c15",
+      "installedAt": "2026-05-15T04:10:12.681Z",
+      "updatedAt": "2026-05-15T04:10:12.681Z"
+    },
+    "persona-project-manager": {
+      "source": "googleworkspace/cli",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/googleworkspace/cli.git",
+      "skillPath": "skills/persona-project-manager/SKILL.md",
+      "skillFolderHash": "0f557b73aa91ced83475a9e85c6ef455c6f16ae0",
+      "installedAt": "2026-05-15T04:54:02.981Z",
+      "updatedAt": "2026-05-15T04:54:02.981Z"
+    },
+    "sprint-planning": {
+      "source": "anthropics/knowledge-work-plugins",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/knowledge-work-plugins.git",
+      "skillPath": "product-management/skills/sprint-planning/SKILL.md",
+      "skillFolderHash": "35557ddd6d0891ad91e77bb5d8e4713e80360688",
+      "installedAt": "2026-05-15T04:54:03.855Z",
+      "updatedAt": "2026-05-15T04:54:03.855Z"
+    },
+    "mermaid-gantt-chart-generator": {
+      "source": "jeremylongshore/claude-code-plugins-plus-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills.git",
+      "skillPath": "planned-skills/generated/18-visual-content/mermaid-gantt-chart-generator/SKILL.md",
+      "skillFolderHash": "78644db9d102afa56262da6b9138e933831af81f",
+      "installedAt": "2026-05-15T04:54:24.760Z",
+      "updatedAt": "2026-05-15T04:54:24.760Z"
+    },
+    "swain-doctor": {
+      "source": "cristoslc/swain",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/cristoslc/swain.git",
+      "skillPath": "skills/swain-doctor/SKILL.md",
+      "skillFolderHash": "a530ab969a85ff1d1723f8d8d479ea9a46a59daa",
+      "installedAt": "2026-05-15T04:59:22.020Z",
+      "updatedAt": "2026-05-15T04:59:22.020Z"
+    },
+    "healthcare-phi-compliance": {
+      "source": "affaan-m/everything-claude-code",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/affaan-m/everything-claude-code.git",
+      "skillPath": "skills/healthcare-phi-compliance/SKILL.md",
+      "skillFolderHash": "81be490d78ecc41f0ac5f2976fac24ce9e309668",
+      "installedAt": "2026-05-15T04:59:27.023Z",
+      "updatedAt": "2026-05-15T04:59:27.023Z"
+    },
+    "clinical-diagnostic-reasoning": {
+      "source": "erichowens/some_claude_skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/erichowens/some_claude_skills.git",
+      "skillPath": ".claude/skills/clinical-diagnostic-reasoning/SKILL.md",
+      "skillFolderHash": "4eda31f4b721bde4652091592443c16b6929a71f",
+      "installedAt": "2026-05-15T05:00:14.896Z",
+      "updatedAt": "2026-05-15T05:00:14.896Z"
+    },
+    "tooluniverse-drug-regulatory": {
+      "source": "mims-harvard/tooluniverse",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mims-harvard/tooluniverse.git",
+      "skillPath": "skills/tooluniverse-drug-regulatory/SKILL.md",
+      "skillFolderHash": "fe5a973fc2569bcbcb7bdfaf10593b64b4fa9a70",
+      "installedAt": "2026-05-15T05:01:13.062Z",
+      "updatedAt": "2026-05-15T05:01:13.062Z"
+    },
+    "pharmacy-supply-chain": {
+      "source": "kishorkukreja/awesome-supply-chain",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/kishorkukreja/awesome-supply-chain.git",
+      "skillPath": "skills/pharmacy-supply-chain/SKILL.md",
+      "skillFolderHash": "c9fecc8b5297e13717f181ffc4f361f6d4c89992",
+      "pluginName": "supply-chain-skills",
+      "installedAt": "2026-05-15T05:01:13.943Z",
+      "updatedAt": "2026-05-15T05:01:13.943Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "antigravity",
+    "cline",
+    "codex",
+    "cursor",
+    "deepagents",
+    "dexto",
+    "firebender",
+    "gemini-cli",
+    "github-copilot",
+    "kimi-cli",
+    "opencode",
+    "warp"
+  ]
+}

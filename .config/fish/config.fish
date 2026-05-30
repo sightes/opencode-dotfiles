@@ -47,17 +47,21 @@ set -g fish_color_user A6E22E
 set -g fish_color_host AE81FF
 set -g fish_color_host_remote F92672
 
+# Desactivar mensaje de bienvenida de fish
+set -U fish_greeting ""
+
 # ============================================
 # Solo configuraciones interactivas
 # ============================================
 if status is-interactive
-    # Detectar si estamos en consola pura (TTY real)
-    # En TTY los iconos de Nerd Fonts no se renderizan bien
-    set -l current_tty (tty 2>/dev/null)
-    if string match -q "/dev/tty*" $current_tty
-        set -g IS_TTY 1
-    else
-        set -g IS_TTY 0
+    # Detectar si estamos en consola pura (TTY real en Linux)
+    # En macOS todas las terminales usan /dev/ttys*, asi que asumimos grafica
+    set -g IS_TTY 0
+    if test (uname) = Linux
+        set -l current_tty (tty 2>/dev/null)
+        if string match -q "/dev/tty*" $current_tty
+            set -g IS_TTY 1
+        end
     end
 
     # --- Alias comunes ---

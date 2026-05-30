@@ -7,6 +7,7 @@ BACKUP_DIR="$HOME/.opencode-dotfiles-backup-$(date +%Y%m%d_%H%M%S)"
 
 LINKS=(
   ".config/opencode"
+  ".config/fish"
   ".agents/skills"
   ".agents/.skill-lock.json"
   ".claude/CLAUDE.md"

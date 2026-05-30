@@ -76,12 +76,12 @@ if status is-interactive
     alias pps="podman ps"
     alias ppsa="podman ps -a"
     alias pi="podman images"
-    alias ports="sudo ss -tulpn"
+    alias ports="lsof -iTCP -sTCP:LISTEN -P -n 2>/dev/null"
     alias myip="curl ifconfig.me"
     alias disk="df -h"
-    alias mem="free -h"
+    alias mem="memory_pressure 2>/dev/null | head -4"
     alias cpu="btop"
-    alias update="sudo apt update && sudo apt upgrade -y"
+    alias update="brew update && brew upgrade && brew cleanup"
 
     # --- Alias con iconos (solo si NO estamos en TTY) ---
     if test $IS_TTY -eq 0
@@ -195,41 +195,27 @@ if status is-interactive
         end
     end
 
-    # --- Constelacion Polaris (ASCII Art) ---
-    function __print_polaris_constellation
-        set -l pad "                    "
-        echo ""
-        set_color brblack;  printf "%s              .\n" $pad
-        set_color white;  printf "%s        .           .\n" $pad
-        set_color brcyan; printf "%s     .       *          .\n" $pad
-        set_color brmagenta; printf "%s        .       .\n" $pad
-        set_color white;  printf "%s  .                *             .\n" $pad
-        set_color white;  printf "%s       ." $pad
-        set_color bryellow; printf "    *"
-        set_color bryellow; printf "   POLARIS   "
-        set_color bryellow; printf "*"
-        set_color white;  printf "    .\n"
-        set_color brcyan; printf "%s            *       .\n" $pad
-        set_color white;  printf "%s  .       .                .       .\n" $pad
-        set_color brmagenta; printf "%s        .           *          .\n" $pad
-        set_color brblack;  printf "%s             .           .\n" $pad
-        set_color brblack;  printf "%s                   .\n" $pad
+    # --- System Info (una vez por sesion) ---
+    if not set -q __fish_sysinfo_displayed
+        set -g __fish_sysinfo_displayed 1
+        set_color brcyan
+        echo -n "  OS: "
         set_color normal
-        echo ""
-        set_color green
-        echo "  >>> Bienvenido, el modo Polaris esta activo"
+        sw_vers -productName 2>/dev/null; or echo -n "macOS"
+        echo -n " "
+        sw_vers -productVersion 2>/dev/null
+        set_color brcyan
+        echo -n "  Kernel: "
         set_color normal
-        if test $IS_TTY -eq 1
-            echo "      Consola pura detectada: iconos desactivados, colores TTY aplicados"
-        else
-            echo "      Terminal grafica: estilo Nordtron activado"
-        end
+        uname -r
+        set_color brcyan
+        echo -n "  Uptime: "
+        set_color normal
+        uptime | sed 's/.*up //' | sed 's/,.*//'
+        set_color brcyan
+        echo -n "  Shell: "
+        set_color normal
+        echo "fish "(fish --version | string split " " | tail -1)
         echo ""
-    end
-
-    # --- Bienvenida con constelacion Polaris (una vez por sesion) ---
-    if not set -q __fish_tty_welcome
-        set -g __fish_tty_welcome 1
-        __print_polaris_constellation
     end
 end
